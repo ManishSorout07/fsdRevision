@@ -7,7 +7,27 @@
 </head>
 <body>
     <script> 
-        
+        // function getdata(dataid){
+        //     setTimeout(()=>{
+        //         console.log("data",dataid);
+        //     }, 2000);
+        // }
+        // getdata(1);
+        // getdata(2);
+        // getdata(3);
+
+        async function newf(){
+            let mpromise = new Promise((resolve, reject)=>{
+                setTimeout(()=>{
+                    resolve("done")
+            }, 2000);
+            });
+
+            let result = await mpromise;
+            alert(result);
+            
+        }
+        newf();
     </script>
 
 

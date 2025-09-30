@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        const mypromise = new Promise((resolve,reject)=>{
+            const password = "aditya@12345";
+            if(password.length>8){
+                resolve("password length is OK ");
+            }
+            else{
+                reject("password length is not OK ");
+            }
+        })
+        mypromise.then((msg)=>{
+            console.log(msg);
+        })
+        mypromisec.catch((err)=>{
+            console.log(err);
+        })
+    </script>
+</body>
+</html>
